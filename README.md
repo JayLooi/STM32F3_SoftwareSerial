@@ -7,7 +7,7 @@ This library uses Timer3 and GPIO port C pin 6 (tx) and pin 7 (rx).
 #include "SoftwareSerial.h"
 int main(void)
 {
-  ssInit(9600);         // Initialise software UART and specify the baud rate
+	ssInit(9600);         // Initialise software UART and specify the baud rate
 	while(1) {
 		if(isRxAvailable()) {
 			ssWriteByte(ssReadByte());
